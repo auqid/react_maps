@@ -14,6 +14,7 @@ const Map = ( {data} ) => {
         
         center={[0,0]}
         zoom={2}
+        maxZoom={20}
         style={{ width: '100%', height: '400px' }}
       >
         <TileLayer
@@ -28,7 +29,7 @@ const Map = ( {data} ) => {
           if (aqs >= 81 && aqs <= 100) {
             return '#00B0f0';
           } else if (aqs >= 61 && aqs <= 80) {
-            return '#5ED2A';
+            return '#5ed21a';
           } else if (aqs >= 41 && aqs <= 60) {
             return '#edb91e';
           } else if (aqs >= 21 && aqs <= 40) {
